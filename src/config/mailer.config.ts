@@ -33,7 +33,7 @@ async function sendOrderSuccessEmail(order: Order) {
             subject: "Order Confirmation", // Email subject
             html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h1 style="color: #333; text-align: center;">VINZINEE.</h1>
+      <h1 style="color: #333; text-align: center;">TECHIECOMMERCE</h1>
     <h2 style="color: #333; text-align: center;">Thank you for your order!</h2>
       <p style="color: #555; text-align: center;">Your order has been successfully processed.</p>
       <div style="margin-top: 20px;">
@@ -100,7 +100,7 @@ async function sendAdminOrderNotification(order: Order) {
             html: `
                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
                     <h1 style="text-align: center; font-size:30px; font-weight: 700; font- margin-bottom: 30px;">
-                       VINZINEE New Order
+                       TECHIECOMMERCE New Order
                     </h1>
                     <h2 style="color: #333; text-align: center;">New Order Received</h2>
                     <div style="margin-top: 20px;">
