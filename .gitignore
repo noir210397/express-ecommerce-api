@@ -20,7 +20,7 @@ lerna-debug.log*
 ./src/servicekey/
 
 # --- TypeScript / builds ---
-dist/
+# dist/
 build/
 lib/
 out/
