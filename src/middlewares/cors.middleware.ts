@@ -1,9 +1,6 @@
 import cors, { CorsOptions } from 'cors';
-import { DOMAIN_NAMES } from 'src/constants/constants';
-
-export const whitelist = [
-    ...DOMAIN_NAMES
-];
+const allowedUrls = process.env.ALLOWED_URLS
+const whitelist = allowedUrls ? allowedUrls.split(",") : []
 
 const corsOptions: CorsOptions = {
     origin: (origin, callback) => {

@@ -2,11 +2,11 @@
   "name": "expresse-ecommerce-api",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "main": "./dist/server.js",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsup",
+    "build": "tsc && tsc-alias",
     "start": "node dist/server.js",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
@@ -25,6 +25,7 @@
     "multer": "^2.0.2",
     "nodemailer": "^7.0.6",
     "stripe": "^18.5.0",
+    "tsc-alias": "^1.8.16",
     "zod": "^4.0.14"
   },
   "devDependencies": {

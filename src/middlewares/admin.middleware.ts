@@ -1,8 +1,9 @@
 import { Request, Response, NextFunction } from "express";
 import { auth } from "src/config/firebase.config";
-import { DOMAIN_NAMES } from "src/constants/constants";
 import { UserPayload } from "src/types/user";
-const ADMIN_ORIGIN = DOMAIN_NAMES[1]; // replace with your admin site
+const allowedUrls = process.env.ALLOWED_URLS
+const whitelist = allowedUrls ? allowedUrls.split(",") : []
+const ADMIN_ORIGIN = allowedUrls ? allowedUrls.split(",")[0] : "" // replace with your admin site
 
 export async function adminAuthMiddleware(
     req: Request,
